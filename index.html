@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MP3 Player</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d5a98b8c2b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div>
+
+
+        <div id="main-container">
+            <h1 id="artist-name
+    ">TheFatRat</h1>
+            <h2 id="song-name
+    ">Stronger</h2>
+            <img id="song-image" src="/resources/thefatrat-stronger-image.jpg" alt="song-cover">
+            <i class="fa-solid fa-circle-play" id="play-circle" onclick="playStop(this)"></i>
+            <i class="fa-solid fa-circle-left" onclick="nextSong(this)"></i>
+            <i class="fa-solid fa-circle-right"></i>
+            <input type="range" id="main-volume" min="0" max="1" step="0.01" name="main-volume" onchange="changeAudioVolume(this.value)">
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
